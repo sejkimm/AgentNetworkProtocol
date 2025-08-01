@@ -240,7 +240,7 @@ Agent Description Protocol (ADP)은 각 에이전트에 표준화된 자기 설�
 
 이 문제를 해결하기 위해 Agent Network Protocol (ANP)은 AI 네이티브 데이터 네트워크 구조를 제안합니다. Agent Description Protocol (ADP)과 에이전트 발견 프로토콜을 통해 각 에이전트는 구조화되고 표준화된 방식으로 서비스 인터페이스, 능력 정보 및 데이터 리소스를 공개하고 개방된 발견 메커니즘을 통해 전체 에이전트 네트워크에 자동으로 노출될 수 있습니다.
 
-![ai-native-network](../images/ai-native-network.png)
+![ai-native-network](images/ai-native-network.png)
 
 이 프레임워크 하에서 모든 에이전트와 그들이 운반하는 데이터 리소스(텍스트, API, 오디오/비디오, 이미지 등)는 기계 친화적인 개방 네트워크를 형성합니다:
 

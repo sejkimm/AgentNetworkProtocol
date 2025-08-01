@@ -30,7 +30,7 @@ AgentNetworkProtocol(ANP)은 **에이전트 인터넷 시대의 HTTP**가 되는
 우리의 비전은 **에이전트들이 서로 연결되는 방식을 정의하여, 수십억 개의 에이전트를 위한 개방적이고 안전하며 효율적인 협업 네트워크를 구축하는 것**입니다.
 
 <p align="center">
-  <img src="/images/agentic-web3.png" width="50%" alt="Agentic Web"/>
+  <img src="korean/images/agentic-web3.png" width="50%" alt="Agentic Web"/>
 </p>
 
 우리는 에이전트 인터넷이 인간 인터넷 다음의 차세대 정보 인프라를 대표하며, 디지털 세계의 연결과 협업 방식을 근본적으로 변화시킬 것이라고 믿습니다. 이러한 비전에서:
@@ -56,7 +56,7 @@ AgentNetworkProtocol(ANP)은 **에이전트 인터넷 시대의 HTTP**가 되는
 ## 3계층 프로토콜 아키텍처
 
 <p align="center">
-  <img src="/images/anp-architecture.png" width="50%" alt="프로토콜 계층 다이어그램"/>
+  <img src="korean/images/anp-architecture.png" width="50%" alt="프로토콜 계층 다이어그램"/>
 </p>
 
 - 🔒 **신원 및 보안 통신 계층**: W3C DID(Decentralized Identifiers) 사양을 기반으로 하고, 기존의 성숙한 웹 인프라를 기반으로 분산형 신원 인증 체계와 종단 간 암호화 통신 솔루션을 만듭니다. 어떤 플랫폼의 에이전트든 중앙집중식 시스템에 의존하지 않고 서로를 인증할 수 있습니다.
@@ -65,9 +65,12 @@ AgentNetworkProtocol(ANP)은 **에이전트 인터넷 시대의 HTTP**가 되는
 
 ## 빠른 시작
 
-ANP의 기본 개념과 사용법을 빠르게 이해하고 싶다면, 시작 가이드를 확인하세요: [ANP 시작 가이드](docs/chinese/ANP입门指南.md)
+ANP의 기본 개념과 사용법을 빠르게 이해하고 싶다면, 기술 백서를 확인하세요: [ANP 기술 백서](korean/01-agentnetworkprotocol-technical-white-paper-kor.md)
 
-ANP 관련 데모를 빠르게 실행하고 싶다면, 샘플 프로그램 문서를 확인하세요: [ANP 샘플 프로그램](docs/chinese/ANP示例程序.md)
+ANP 관련 프로토콜 사양을 자세히 보려면 다음 문서들을 확인하세요:
+- [DID-WBA 방법 설계 사양](korean/03-did-wba-method-design-specification-kor.md)
+- [ANP 에이전트 통신 메타 프로토콜 사양](korean/06-anp-agent-communication-meta-protocol-specification-kor.md)
+- [ANP 에이전트 설명 프로토콜 사양](korean/07-anp-agent-description-protocol-specification-kor.md)
 
 ## 프로토콜 SDK
 
@@ -76,7 +79,7 @@ AgentNetworkProtocol의 오픈소스 구현을 개발하고 있습니다. 저장
 ## 추가 자료
 
 - [확장 자료](docs/links.md)의 전체 자료
-- 자세한 설계는 [ANP 기술 백서](/01-agentnetworkprotocol-technical-white-paper.md)를 읽어보세요
+- 자세한 설계는 [ANP 기술 백서](korean/01-agentnetworkprotocol-technical-white-paper-kor.md)를 읽어보세요
 - 참조 오픈소스 구현 [AgentConnect 예제](https://github.com/agent-network-protocol/AgentConnect)
 
 ## 마일스톤
@@ -102,7 +105,7 @@ ANP 개발을 오픈소스 커뮤니티 접근법을 통해 추진하기 위해 
 
 ## 기여하기
 
-모든 형태의 기여를 환영합니다. [CONTRIBUTING.md](CONTRIBUTING.md) 파일을 참조하세요.
+모든 형태의 기여를 환영합니다. [CONTRIBUTING.kor.md](CONTRIBUTING.kor.md) 파일을 참조하세요.
 
 ## 라이선스
 

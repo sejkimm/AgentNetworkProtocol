@@ -56,7 +56,7 @@ W3C DID는 발표 후 널리 적용되지 않았습니다. 하지만 모든 사�
 
 원래 W3C DID 사양과 우리의 방법 구현을 결합한 것이 제 생각에는 현재 사용 가능한 지능형 agent에게 가장 적합한 신원 솔루션입니다.
 
-솔루션의 자세한 소개는 다음을 참조하세요: [did:wba, a Web-based Decentralized Identifier](/blogs/did:wba,%20a%20Web-based%20Decentralized%20Identifier.md)
+솔루션의 자세한 소개는 다음을 참조하세요: [did:wba, a Web-based Decentralized Identifier](did-wba-a-web-based-decentralized-identifier-kor.md)
 
 ## 핵심 이슈 2: 인간 승인—중요한 작업에 대한 보안 보장
 

@@ -6,13 +6,13 @@ did:wba 방법은 W3C Decentralized Identifiers (DIDs) 표준 하의 초안 방�
 
 DID의 핵심 구성 요소는 DID Document로, 특정 DID와 관련된 핵심 정보를 포함합니다. 예를 들어 DID 소유자의 신원을 확인하는 데 사용되는 공개 키 등이 있습니다. DID 방법은 DID 문서를 생성, 저장, 업데이트 및 폐기하는 방법을 정의합니다.
 
-우리는 [did:wba method](/03-did:wba%20Method%20Design%20Specification.md)를 설계했습니다. did:wba 방법은 기존의 성숙한 기술과 웹 인프라를 완전히 활용하여 기존 시스템의 완전한 재구성을 요구하지 않고 탈중앙화 신원 인증을 쉽게 구현할 수 있습니다. 플랫폼은 중앙집중적인 방식으로 계정 시스템을 관리하면서 각 사용자를 위한 did:wba DID를 생성하여 플랫폼 간 상호 연결을 달성할 수 있습니다.
+우리는 [did:wba method](../03-did-wba-method-design-specification-kor.md)를 설계했습니다. did:wba 방법은 기존의 성숙한 기술과 웹 인프라를 완전히 활용하여 기존 시스템의 완전한 재구성을 요구하지 않고 탈중앙화 신원 인증을 쉽게 구현할 수 있습니다. 플랫폼은 중앙집중적인 방식으로 계정 시스템을 관리하면서 각 사용자를 위한 did:wba DID를 생성하여 플랫폼 간 상호 연결을 달성할 수 있습니다.
 
 did:wba 방법을 사용하는 신원 시스템은 이메일과 유사한 비즈니스 특성을 달성할 수 있습니다. 각 플랫폼이 중앙집중적인 방식으로 자체 계정 시스템을 구현하면서 플랫폼 간 상호 연결을 가능하게 합니다.
 
-API keys와 비교하면 did:wba 방법은 우수한 보안성을 제공하고, OpenID Connect와 비교하면 did:wba 방법은 더 간단한 상호작용과 더 큰 탈중앙화를 특징으로 합니다. 자세한 비교는 [did:wba vs OpenID Connect and API keys](/blogs/Comparison%20of%20did:wba%20with%20OpenID%20Connect%20and%20API%20keys.md)를 참조하세요.
+API keys와 비교하면 did:wba 방법은 우수한 보안성을 제공하고, OpenID Connect와 비교하면 did:wba 방법은 더 간단한 상호작용과 더 큰 탈중앙화를 특징으로 합니다. 자세한 비교는 [did:wba vs OpenID Connect and API keys](comparison-of-did-wba-with-openid-connect-and-api-keys-kor.md)를 참조하세요.
 
-did:wba 방법은 또한 [did:wba Security Principle Analysis](/blogs/did-wba-security-principles.md)에서 설명한 바와 같이 OpenID Connect와 동등한 보안성을 제공합니다.
+did:wba 방법은 또한 [did:wba Security Principle Analysis](did-wba-security-principles-kor.md)에서 설명한 바와 같이 OpenID Connect와 동등한 보안성을 제공합니다.
 
 ## 2. DID Document
 

@@ -118,7 +118,7 @@ DID는 본질적으로 분산 신원을 위해 설계되었기 때문입니다.
 ANP DID 신원 인증 관련 기사:
 
 - [Comparison of did:wba with OpenID Connect and API keys](./Comparison%20of%20did:wba%20with%20OpenID%20Connect%20and%20API%20keys.md)
-- [did:wba method specification](/03-did:wba%20Method%20Design%20Specification.md)
+- [did:wba method specification](../03-did-wba-method-design-specification-kor.md)
 
 MCP와 ANP 신원 인증을 비교하면 몇 가지 차이점을 확인할 수 있습니다:
 
@@ -162,7 +162,7 @@ ANP의 외부 세계로의 정보 출력 조직은 시맨틱 웹 Linked-Data 기
 
 Linked Data는 웹 표준(RDF, SPARQL, URI 등)을 기반으로 한 구조화된 데이터 공유 및 상호 연결 기술로, 고유 식별자(URI)를 통해 다양한 소스의 데이터를 연결하여 기계 판독 가능하고 의미론적으로 이해 가능하게 만드는 것을 목표로 합니다.
 
-구현에서 우리는 Agent의 신원, 기능, 엔터티 정보, API 인터페이스 등을 설명하는 데 사용되는 Agent 설명 사양([Agent Description](/07-ANP-Agent%20Description%20Protocol%20Specification.md))을 정의합니다.
+구현에서 우리는 Agent의 신원, 기능, 엔터티 정보, API 인터페이스 등을 설명하는 데 사용되는 Agent 설명 사양([Agent Description](../07-anp-agent-description-protocol-specification-kor.md))을 정의합니다.
 
 Agent 설명 문서는 JSON-LD 형식을 사용합니다. JSON-LD는 JSON을 기반으로 한 Linked Data 형식으로, 다양한 데이터를 데이터 네트워크로 연결하면서 기계 판독 가능하게 만들 수 있습니다.
 

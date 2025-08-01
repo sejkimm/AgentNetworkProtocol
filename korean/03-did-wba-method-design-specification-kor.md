@@ -166,7 +166,7 @@ DID Core 사양 외에도 대부분의 다른 사양은 여전히 초안 단계�
 - **service**: DID 주체와 연관된 서비스 목록을 정의하는 선택적 필드입니다.
   - **id**: 서비스의 고유 식별자.
   - **type**: 서비스 유형. 에이전트 설명 서비스의 경우 "AgentDescription"을 사용합니다.
-  - **serviceEndpoint**: 서비스의 URL 엔드포인트. 에이전트 설명 서비스의 경우 이 URL은 [ANP-Agent Description Protocol Specification](/07-anp-agent-description-protocol-specification.md)을 따르는 문서를 가리킵니다.
+  - **serviceEndpoint**: 서비스의 URL 엔드포인트. 에이전트 설명 서비스의 경우 이 URL은 [ANP-Agent Description Protocol Specification](07-anp-agent-description-protocol-specification-kor.md)을 따르는 문서를 가리킵니다.
 
 > 참고:
 >
