@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="550" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="550" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">什么是协议 (Protocol)</text>
+  
+  <!-- 节点 A -->
+  <rect x="100" y="150" width="150" height="250" rx="10" ry="10" fill="#4285f4" opacity="0.8"/>
+  <text x="175" y="275" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white">节点 A</text>
+  
+  <!-- 节点 B -->
+  <rect x="550" y="150" width="150" height="250" rx="10" ry="10" fill="#34a853" opacity="0.8"/>
+  <text x="625" y="275" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white">节点 B</text>
+  
+  <!-- 协议层 -->
+  <rect x="250" y="150" width="300" height="250" rx="10" ry="10" fill="#fbbc05" opacity="0.7"/>
+  <text x="400" y="180" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">协议</text>
+  
+  <!-- 数据格式 -->
+  <rect x="280" y="200" width="240" height="40" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="400" y="225" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">数据格式约定</text>
+  
+  <!-- 交换流程 -->
+  <rect x="280" y="260" width="240" height="40" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="400" y="285" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">数据交换流程约定</text>
+  
+  <!-- 角色约定 -->
+  <rect x="280" y="320" width="240" height="40" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="400" y="345" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">角色约定</text>
+  
+  <!-- 箭头标记定义 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ea4335"/>
+    </marker>
+  </defs>
+  
+  <!-- 箭头 A 到 B (调整位置，避开文字) -->
+  <path d="M 250,190 C 300,170 350,170 400,190" stroke="#ea4335" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <!-- 箭头 B 到 A (调整位置，避开文字) -->
+  <path d="M 550,360 C 500,380 450,380 400,360" stroke="#ea4335" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <!-- 说明文本 -->
+  <text x="400" y="420" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#333">协议定义了系统间通信的规则</text>
+  <text x="400" y="450" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#333">包括数据格式、交换流程和角色约定</text>
+  
+  <!-- 底部注释 -->
+  <text x="400" y="510" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666">
+    协议是两个节点或系统之间数据传递格式的约定，也约定数据交换的流程和角色
+  </text>
+</svg> 

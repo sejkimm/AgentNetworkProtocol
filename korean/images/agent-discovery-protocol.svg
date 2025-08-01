@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500">
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  
+  <!-- 标题 -->
+  <text x="350" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">智能体发现协议 (ADSP)</text>
+  <text x="350" y="85" text-anchor="middle" font-size="20" font-weight="bold" fill="#4285F4">主动发现流程</text>
+  
+  <!-- 主动发现流程 -->
+  <g transform="translate(150, 130)">
+    <!-- 搜索引擎/智能体 -->
+    <rect x="0" y="0" width="140" height="60" rx="10" fill="#4285F4" stroke="#2C3E50" stroke-width="2"/>
+    <text x="70" y="35" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">搜索引擎/智能体</text>
+    
+    <!-- 域名服务器 -->
+    <rect x="300" y="0" width="140" height="60" rx="10" fill="#FF6B6B" stroke="#2C3E50" stroke-width="2"/>
+    <text x="370" y="35" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">域名服务器</text>
+    
+    <!-- 智能体描述文档 -->
+    <rect x="300" y="200" width="140" height="60" rx="10" fill="#FDCB6E" stroke="#2C3E50" stroke-width="2"/>
+    <text x="370" y="225" text-anchor="middle" font-size="16" fill="#333" font-weight="bold">智能体描述文档</text>
+    <text x="370" y="245" text-anchor="middle" font-size="14" fill="#333">JSON-LD</text>
+    
+    <!-- 交互流程 -->
+    <!-- 请求 .well-known -->
+    <path d="M140,30 L300,30" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="220" y="20" text-anchor="middle" font-size="14" fill="#333" font-weight="bold">1. 请求 /.well-known/agent-descriptions</text>
+    
+    <!-- 返回发现文档 -->
+    <path d="M300,60 L140,60" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="220" y="80" text-anchor="middle" font-size="14" fill="#333">2. 返回 CollectionPage (JSON-LD)</text>
+    
+    <!-- 请求智能体描述 - 修改路径避免黑色三角区域 -->
+    <path d="M70,60 L70,230 L300,230" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+    <text x="185" y="210" text-anchor="middle" font-size="14" fill="#333">3. 请求智能体描述文档</text>
+    
+    <!-- 返回智能体描述 - 修改路径避免黑色三角区域 -->
+    <path d="M300,260 L70,260 L70,60" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+    <text x="185" y="280" text-anchor="middle" font-size="14" fill="#333">4. 返回智能体描述</text>
+    
+    <!-- 域名服务器到描述文档 -->
+    <path d="M370,60 L370,200" stroke="#333" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)" fill="none"/>
+    <text x="390" y="130" text-anchor="start" font-size="14" fill="#333">包含URL链接</text>
+  </g>
+  
+  <!-- 底部说明 -->
+  <g transform="translate(350, 430)">
+    <text x="0" y="0" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">核心特点</text>
+    <text x="0" y="30" text-anchor="middle" font-size="16" fill="#333">• 使用.well-known URI作为智能体发现入口点</text>
+    <text x="0" y="60" text-anchor="middle" font-size="16" fill="#333">• 基于JSON-LD格式，支持链接数据和语义网</text>
+  </g>
+  
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg> 

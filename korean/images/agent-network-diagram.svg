@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Central Network Concept -->
+  <circle cx="400" cy="300" r="280" fill="rgba(100,149,237,0.05)" stroke="#6495ED" stroke-width="2" stroke-dasharray="10,5"/>
+
+  <!-- Node Positioning on Circumference -->
+  <g>
+    <!-- Large Tech Providers -->
+    <circle cx="680" cy="180" r="30" fill="#5A9" stroke="#2C3E50" stroke-width="2"/>
+    <text x="680" y="180" text-anchor="middle" dy="5" fill="#2C3E50" font-weight="bold">Agent</text>
+
+    <circle cx="700" cy="420" r="30" fill="#4285F4" stroke="#2C3E50" stroke-width="2"/>
+    <text x="700" y="420" text-anchor="middle" dy="5" fill="white" font-weight="bold">Agent</text>
+
+    <circle cx="120" cy="420" r="30" fill="#9370DB" stroke="#2C3E50" stroke-width="2"/>
+    <text x="120" y="420" text-anchor="middle" dy="5" fill="white" font-weight="bold">Agent</text>
+
+    <circle cx="100" cy="180" r="30" fill="#F0A500" stroke="#2C3E50" stroke-width="2"/>
+    <text x="100" y="180" text-anchor="middle" dy="5" fill="#2C3E50" font-weight="bold">Agent</text>
+
+    <!-- Startups -->
+    <circle cx="400" cy="560" r="30" fill="#FF6B6B" stroke="#2C3E50" stroke-width="2"/>
+    <text x="400" y="560" text-anchor="middle" dy="5" fill="#2C3E50" font-weight="bold">Agent</text>
+
+    <circle cx="400" cy="40" r="30" fill="#4ECDC4" stroke="#2C3E50" stroke-width="2"/>
+    <text x="400" y="40" text-anchor="middle" dy="5" fill="#2C3E50" font-weight="bold">Agent</text>
+
+    <circle cx="220" cy="520" r="30" fill="#45B7D1" stroke="#2C3E50" stroke-width="2"/>
+    <text x="220" y="520" text-anchor="middle" dy="5" fill="#2C3E50" font-weight="bold">Agent</text>
+
+    <circle cx="580" cy="520" r="30" fill="#FDCB6E" stroke="#2C3E50" stroke-width="2"/>
+    <text x="580" y="520" text-anchor="middle" dy="5" fill="#2C3E50" font-weight="bold">Agent</text>
+
+    <circle cx="220" cy="80" r="30" fill="#6C5CE7" stroke="#2C3E50" stroke-width="2"/>
+    <text x="220" y="80" text-anchor="middle" dy="5" fill="white" font-weight="bold">Agent</text>
+
+    <circle cx="580" cy="80" r="30" fill="#FF8A5B" stroke="#2C3E50" stroke-width="2"/>
+    <text x="580" y="80" text-anchor="middle" dy="5" fill="#2C3E50" font-weight="bold">Agent</text>
+  </g>
+
+  <!-- Comprehensive Interconnection Lines -->
+  <g stroke="#6495ED" stroke-width="1.5" opacity="0.6">
+    <!-- Large Tech Providers Full Connectivity -->
+    <line x1="680" y1="180" x2="700" y2="420" />
+    <line x1="680" y1="180" x2="120" y2="420" />
+    <line x1="680" y1="180" x2="100" y2="180" />
+    
+    <line x1="700" y1="420" x2="120" y2="420" />
+    <line x1="700" y1="420" x2="100" y2="180" />
+    <line x1="120" y1="420" x2="100" y2="180" />
+
+    <!-- Startup Inter-Connectivity -->
+    <line x1="220" y1="80" x2="580" y2="80" />
+    <line x1="220" y1="80" x2="400" y2="40" />
+    <line x1="580" y1="80" x2="400" y2="40" />
+    
+    <line x1="220" y1="520" x2="580" y2="520" />
+    <line x1="220" y1="520" x2="400" y2="560" />
+    <line x1="580" y1="520" x2="400" y2="560" />
+    
+    <line x1="220" y1="80" x2="220" y2="520" />
+    <line x1="580" y1="80" x2="580" y2="520" />
+
+    <!-- Connectivity between Providers and Startups -->
+    <line x1="680" y1="180" x2="400" y2="40" />
+    <line x1="680" y1="180" x2="400" y2="560" />
+    <line x1="700" y1="420" x2="400" y2="40" />
+    <line x1="700" y1="420" x2="400" y2="560" />
+    <line x1="120" y1="420" x2="400" y2="40" />
+    <line x1="120" y1="420" x2="400" y2="560" />
+    <line x1="100" y1="180" x2="400" y2="40" />
+    <line x1="100" y1="180" x2="400" y2="560" />
+  </g>
+
+  <!-- Central Protocol Label -->
+  <text x="400" y="300" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C3E50">
+    Agentic Web
+    <tspan x="400" dy="25" font-size="16">Agent Network Protocol</tspan>
+  </text>
+</svg>

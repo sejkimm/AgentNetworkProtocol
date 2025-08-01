@@ -1,6 +1,6 @@
 <div align="center">
   
-[English](README.md) | [中文](README.cn.md)
+[English](README.md) | [中文](README.cn.md) | [한국어](README.kr.md)
 
 </div>
 
@@ -10,6 +10,7 @@
 
 <!-- TOC -->
 ### Table of Contents
+
 - [Vision and Positioning](#vision-and-positioning)
 - [Why We Need ANP](#why-we-need-anp)
 - [Three-Layer Protocol Architecture](#three-layer-protocol-architecture)
@@ -94,7 +95,8 @@ For both the protocol and open-source code implementation, we are gradually adva
 
 We have established an ANP open-source technical community to advance ANP development through an open-source community approach. We sincerely invite you to join our open-source technical community. Our founding committee, community advisors, technical committee, development committee, enterprise observers, and other teams are continuously recruiting.
 
-Email: chgaowei@gmail.com  
+Email: <chgaowei@gmail.com>  
+
 - Discord: [https://discord.gg/sFjBKTY7sB](https://discord.gg/sFjBKTY7sB)  
 - Official website: [https://agent-network-protocol.com/](https://agent-network-protocol.com/)  
 - GitHub: [https://github.com/agent-network-protocol/AgentNetworkProtocol](https://github.com/agent-network-protocol/AgentNetworkProtocol)
@@ -109,5 +111,6 @@ We welcome contributions in any form. Please refer to the [CONTRIBUTING.md](CONT
 This project is open-sourced under the MIT License. For details, please refer to the [LICENSE](LICENSE) file. However, copyright belongs to GaoWei Chang. Any user of this project must retain the original copyright notice and license file.
 
 ## Copyright Notice  
+
 Copyright (c) 2024 GaoWei Chang  
 This file is released under the [MIT License](./LICENSE). You are free to use and modify it, but must retain this copyright notice.

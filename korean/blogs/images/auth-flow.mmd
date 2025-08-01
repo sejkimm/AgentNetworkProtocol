@@ -1,0 +1,25 @@
+sequenceDiagram
+    participant C as 客户端
+    participant S as 服务器
+    
+    Note over C,S: 初始认证请求
+    C->>S: GET /protected-resource
+    S-->>C: 401 Unauthorized<br/>WWW-Authenticate: Bearer nonce="xyz987"
+    
+    Note over C: 生成签名:<br/>1. 获取时间戳<br/>2. 使用私钥签名
+    
+    C->>S: GET /protected-resource<br/>Authorization: DID <did> Nonce <nonce><br/>Timestamp <timestamp> VerificationMethod <key-id><br/>Signature <signature>
+    
+    Note over S: 验证过程:<br/>1. 检查 nonce 是否使用过<br/>2. 验证时间戳<br/>3. 验证签名
+    
+    alt 验证成功
+        S-->>C: 200 OK + Access Token
+        Note over C,S: 后续请求使用 Token
+        C->>S: GET /protected-resource<br/>Authorization: Bearer <token>
+        S-->>C: 200 OK + Resource
+    else 验证失败
+        S-->>C: 401 Unauthorized
+    end
+
+    style C fill:#f9f,stroke:#333,stroke-width:2px
+    style S fill:#9ff,stroke:#333,stroke-width:2px 

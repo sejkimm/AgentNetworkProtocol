@@ -1,0 +1,26 @@
+graph LR
+    subgraph "身份所有者"
+        PrivateKey["私钥"]
+        PublicKey["公钥"]
+    end
+    
+    subgraph "签名过程"
+        Data["原始数据"]
+        Sign["数字签名"]
+        PrivateKey -->|使用私钥签名| Sign
+        Data -->|计算哈希| Sign
+    end
+    
+    subgraph "验证过程"
+        VerifyData["接收到的数据"]
+        VerifySign["接收到的签名"]
+        Result["验证结果"]
+        PublicKey -->|使用公钥验证| Result
+        VerifyData -->|计算哈希| Result
+        VerifySign --> Result
+    end
+
+    style PrivateKey fill:#f9f,stroke:#333,stroke-width:2px
+    style PublicKey fill:#9ff,stroke:#333,stroke-width:2px
+    style Sign fill:#ff9,stroke:#333,stroke-width:2px
+    style Result fill:#9f9,stroke:#333,stroke-width:2px 

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a5298;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="agentGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dataFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#00f2fe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4facfe;stop-opacity:0.8" />
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="pulseGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="siloGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGradient2)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">
+    判断二：智能体间互联互通，打破数据孤岛
+  </text>
+  
+  <!-- Data Silos Section (Top) -->
+  <text x="400" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white">
+    现状：数据孤岛 → 未来：信息自由流动
+  </text>
+  
+  <!-- Data Silos (Top) with APP icons -->
+  <g opacity="0.6">
+    <!-- WeChat Silo -->
+    <rect x="100" y="100" width="80" height="60" rx="8" fill="#07c160" stroke="#05a050" stroke-width="2" filter="url(#siloGlow)"/>
+    <circle cx="125" cy="120" r="6" fill="white"/>
+    <circle cx="125" cy="135" r="4" fill="white"/>
+    <text x="140" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">社交数据</text>
+    <text x="140" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">微信</text>
+    <!-- Lock icon -->
+    <rect x="160" y="115" width="8" height="10" rx="2" fill="#c0392b"/>
+    <circle cx="164" cy="118" r="2" fill="none" stroke="#c0392b" stroke-width="1"/>
+    
+    <!-- Taobao Silo -->
+    <rect x="250" y="100" width="80" height="60" rx="8" fill="#ff6a00" stroke="#e55a00" stroke-width="2" filter="url(#siloGlow)"/>
+    <rect x="270" y="115" width="20" height="12" rx="3" fill="white"/>
+    <circle cx="275" cy="130" r="2" fill="#ff6a00"/>
+    <circle cx="285" cy="130" r="2" fill="#ff6a00"/>
+    <text x="290" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">购物数据</text>
+    <text x="290" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">淘宝</text>
+    <!-- Lock icon -->
+    <rect x="310" y="115" width="8" height="10" rx="2" fill="#c0392b"/>
+    <circle cx="314" cy="118" r="2" fill="none" stroke="#c0392b" stroke-width="1"/>
+    
+    <!-- TikTok Silo -->
+    <rect x="400" y="100" width="80" height="60" rx="8" fill="#000000" stroke="#333" stroke-width="2" filter="url(#siloGlow)"/>
+    <path d="M 420 115 Q 427 112 434 115 Q 430 122 424 125 Q 420 122 420 115" fill="#ff0050"/>
+    <path d="M 427 118 Q 434 115 441 118 Q 437 125 431 128 Q 427 125 427 118" fill="#25f4ee"/>
+    <text x="440" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">娱乐数据</text>
+    <text x="440" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">抖音</text>
+    <!-- Lock icon -->
+    <rect x="460" y="115" width="8" height="10" rx="2" fill="#c0392b"/>
+    <circle cx="464" cy="118" r="2" fill="none" stroke="#c0392b" stroke-width="1"/>
+    
+    <!-- DingTalk Silo -->
+    <rect x="550" y="100" width="80" height="60" rx="8" fill="#006cff" stroke="#0052cc" stroke-width="2" filter="url(#siloGlow)"/>
+    <rect x="575" y="115" width="15" height="15" rx="3" fill="white"/>
+    <circle cx="582" cy="122" r="3" fill="#006cff"/>
+    <text x="590" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">工作数据</text>
+    <text x="590" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">钉钉</text>
+    <!-- Lock icon -->
+    <rect x="610" y="115" width="8" height="10" rx="2" fill="#c0392b"/>
+    <circle cx="614" cy="118" r="2" fill="none" stroke="#c0392b" stroke-width="1"/>
+  </g>
+  
+  <!-- Broken connections with X marks -->
+  <line x1="180" y1="130" x2="250" y2="130" stroke="#ff4757" stroke-width="3" stroke-dasharray="10,5" opacity="0.5"/>
+  <text x="215" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ff4757">✗</text>
+  
+  <line x1="330" y1="130" x2="400" y2="130" stroke="#ff4757" stroke-width="3" stroke-dasharray="10,5" opacity="0.5"/>
+  <text x="365" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ff4757">✗</text>
+  
+  <line x1="480" y1="130" x2="550" y2="130" stroke="#ff4757" stroke-width="3" stroke-dasharray="10,5" opacity="0.5"/>
+  <text x="515" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ff4757">✗</text>
+  
+  <!-- Broken symbol -->
+  <text x="400" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ff4757">
+    ✗ 数据孤岛阻碍AI潜力发挥
+  </text>
+  
+  <!-- Arrow indicating transformation -->
+  <path d="M 400 200 L 400 250" stroke="#00f2fe" stroke-width="4" fill="none" marker-end="url(#arrowhead2)"/>
+  <defs>
+    <marker id="arrowhead2" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto">
+      <polygon points="0 0, 12 5, 0 10" fill="#00f2fe"/>
+    </marker>
+  </defs>
+  
+  <!-- Connected Agents Network (Bottom) -->
+  <text x="400" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    智能体互联互通网络
+  </text>
+  
+  <!-- Central Personal Assistant with AI Brain -->
+  <circle cx="400" cy="350" r="35" fill="url(#agentGradient2)" filter="url(#glow2)"/>
+  <!-- AI Brain icon -->
+  <path d="M 385 340 Q 385 330 400 330 Q 415 330 415 340 Q 415 350 400 355 Q 385 350 385 340" fill="white" opacity="0.9"/>
+  <circle cx="395" cy="340" r="2" fill="#f093fb"/>
+  <circle cx="405" cy="340" r="2" fill="#f093fb"/>
+  <path d="M 390 345 Q 400 350 410 345" stroke="#f093fb" stroke-width="1" fill="none"/>
+  
+  <text x="400" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">
+    个人AI助手
+  </text>
+  
+  <!-- Connected Agent Services with icons -->
+  <!-- Social Agent -->
+  <circle cx="250" cy="320" r="25" fill="#07c160" filter="url(#pulseGlow)"/>
+  <circle cx="250" cy="315" r="6" fill="white"/>
+  <circle cx="250" cy="325" r="4" fill="white"/>
+  <text x="250" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">社交智能体</text>
+  
+  <!-- Shopping Agent -->
+  <circle cx="550" cy="320" r="25" fill="#ff6a00" filter="url(#pulseGlow)"/>
+  <rect x="542" y="312" width="16" height="10" rx="2" fill="white"/>
+  <circle cx="545" cy="325" r="2" fill="white"/>
+  <circle cx="555" cy="325" r="2" fill="white"/>
+  <text x="550" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">购物智能体</text>
+  
+  <!-- Entertainment Agent -->
+  <circle cx="300" cy="450" r="25" fill="#000000" filter="url(#pulseGlow)"/>
+  <path d="M 290 445 Q 295 442 300 445 Q 297 450 293 452 Q 290 450 290 445" fill="#ff0050"/>
+  <path d="M 295 447 Q 300 444 305 447 Q 302 452 298 454 Q 295 452 295 447" fill="#25f4ee"/>
+  <text x="300" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">娱乐智能体</text>
+  
+  <!-- Work Agent -->
+  <circle cx="500" cy="450" r="25" fill="#006cff" filter="url(#pulseGlow)"/>
+  <rect x="490" y="440" width="20" height="15" rx="3" fill="white"/>
+  <rect x="495" y="445" width="10" height="2" fill="#006cff"/>
+  <rect x="495" y="450" width="10" height="2" fill="#006cff"/>
+  <text x="500" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">工作智能体</text>
+  
+  <!-- Travel Agent -->
+  <circle cx="150" cy="380" r="25" fill="#45b7d1" filter="url(#pulseGlow)"/>
+  <rect x="140" y="375" width="20" height="10" rx="2" fill="white"/>
+  <circle cx="145" cy="385" r="2" fill="white"/>
+  <circle cx="155" cy="385" r="2" fill="white"/>
+  <text x="150" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">出行智能体</text>
+  
+  <!-- Finance Agent -->
+  <circle cx="650" cy="380" r="25" fill="#1678ff" filter="url(#pulseGlow)"/>
+  <circle cx="650" cy="380" r="12" fill="white"/>
+  <text x="650" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#1678ff">¥</text>
+  <text x="650" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">金融智能体</text>
+  
+  <!-- Data flow lines with animated particles -->
+  <line x1="375" y1="325" x2="275" y2="320" stroke="url(#dataFlow)" stroke-width="3">
+    <animate attributeName="stroke-dasharray" values="0 100;100 0" dur="2s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="320" cy="322" r="2" fill="#00f2fe">
+    <animateMotion dur="2s" repeatCount="indefinite" path="M0,0 L-45,3 M45,-3 L0,0"/>
+  </circle>
+  
+  <line x1="425" y1="325" x2="525" y2="320" stroke="url(#dataFlow)" stroke-width="3">
+    <animate attributeName="stroke-dasharray" values="0 100;100 0" dur="2s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="480" cy="322" r="2" fill="#00f2fe">
+    <animateMotion dur="2s" repeatCount="indefinite" path="M0,0 L45,-3 M-45,3 L0,0"/>
+  </circle>
+  
+  <line x1="375" y1="375" x2="325" y2="435" stroke="url(#dataFlow)" stroke-width="3">
+    <animate attributeName="stroke-dasharray" values="0 100;100 0" dur="2s" repeatCount="indefinite"/>
+  </line>
+  
+  <line x1="425" y1="375" x2="475" y2="435" stroke="url(#dataFlow)" stroke-width="3">
+    <animate attributeName="stroke-dasharray" values="0 100;100 0" dur="2s" repeatCount="indefinite"/>
+  </line>
+  
+  <line x1="365" y1="350" x2="175" y2="380" stroke="url(#dataFlow)" stroke-width="3">
+    <animate attributeName="stroke-dasharray" values="0 150;150 0" dur="2.5s" repeatCount="indefinite"/>
+  </line>
+  
+  <line x1="435" y1="350" x2="625" y2="380" stroke="url(#dataFlow)" stroke-width="3">
+    <animate attributeName="stroke-dasharray" values="0 150;150 0" dur="2.5s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- Inter-agent connections -->
+  <line x1="250" y1="345" x2="300" y2="425" stroke="#00f2fe" stroke-width="2" opacity="0.7"/>
+  <line x1="550" y1="345" x2="500" y2="425" stroke="#00f2fe" stroke-width="2" opacity="0.7"/>
+  <line x1="175" y1="380" x2="275" y2="450" stroke="#00f2fe" stroke-width="2" opacity="0.7"/>
+  <line x1="625" y1="380" x2="525" y2="450" stroke="#00f2fe" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Network topology visualization -->
+  <g transform="translate(700, 300)">
+    <circle cx="0" cy="0" r="3" fill="#4facfe"/>
+    <circle cx="10" cy="-5" r="2" fill="#4facfe"/>
+    <circle cx="10" cy="5" r="2" fill="#4facfe"/>
+    <circle cx="-10" cy="0" r="2" fill="#4facfe"/>
+    <line x1="0" y1="0" x2="10" y2="-5" stroke="#4facfe" stroke-width="1"/>
+    <line x1="0" y1="0" x2="10" y2="5" stroke="#4facfe" stroke-width="1"/>
+    <line x1="0" y1="0" x2="-10" y2="0" stroke="#4facfe" stroke-width="1"/>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">网络拓扑</text>
+  </g>
+  
+  <!-- Benefits boxes -->
+  <rect x="50" y="500" width="220" height="80" rx="8" fill="rgba(79, 172, 254, 0.2)" stroke="#4facfe" stroke-width="1"/>
+  <text x="60" y="520" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4facfe">
+    获得完整上下文信息
+  </text>
+  <text x="60" y="540" font-family="Arial, sans-serif" font-size="10" fill="white">
+    • 个人信息汇聚一处
+  </text>
+  <text x="60" y="555" font-family="Arial, sans-serif" font-size="10" fill="white">
+    • 智能决策支持
+  </text>
+  <text x="60" y="570" font-family="Arial, sans-serif" font-size="10" fill="white">
+    • 上下文连续性
+  </text>
+  
+  <rect x="300" y="500" width="200" height="80" rx="8" fill="rgba(79, 172, 254, 0.2)" stroke="#4facfe" stroke-width="1"/>
+  <text x="310" y="520" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4facfe">
+    访问所有工具能力
+  </text>
+  <text x="310" y="540" font-family="Arial, sans-serif" font-size="10" fill="white">
+    • 跨平台工具调用
+  </text>
+  <text x="310" y="555" font-family="Arial, sans-serif" font-size="10" fill="white">
+    • 复杂任务自动化
+  </text>
+  <text x="310" y="570" font-family="Arial, sans-serif" font-size="10" fill="white">
+    • 智能体协作
+  </text>
+  
+  <rect x="530" y="500" width="220" height="80" rx="8" fill="rgba(79, 172, 254, 0.2)" stroke="#4facfe" stroke-width="1"/>
+  <text x="540" y="520" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4facfe">
+    智能体间连接为主
+  </text>
+  <text x="540" y="540" font-family="Arial, sans-serif" font-size="10" fill="white">
+    • 智能体协作优先
+  </text>
+  <text x="540" y="555" font-family="Arial, sans-serif" font-size="10" fill="white">
+    • 任务自动分解
+  </text>
+  <text x="540" y="570" font-family="Arial, sans-serif" font-size="10" fill="white">
+    • 网络效应放大
+  </text>
+  
+  <!-- ANP Logo -->
+  <g transform="translate(750, 50)">
+    <circle cx="0" cy="0" r="20" fill="rgba(79, 172, 254, 0.3)" stroke="#4facfe" stroke-width="2"/>
+    <text x="0" y="-3" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4facfe">ANP</text>
+    <text x="0" y="8" text-anchor="middle" font-family="Arial, sans-serif" font-size="5" fill="#4facfe">Protocol</text>
+  </g>
+</svg> 

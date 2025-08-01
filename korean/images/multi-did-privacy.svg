@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">多DID隐私保护策略</text>
+  
+  <!-- 用户图标 -->
+  <circle cx="400" cy="150" r="40" fill="#4285F4" stroke="#2C3E50" stroke-width="2"/>
+  <circle cx="400" cy="130" r="12" fill="#f8f9fa"/>
+  <path d="M375,170 Q400,200 425,170" stroke="#f8f9fa" stroke-width="2" fill="none"/>
+  <text x="400" y="220" text-anchor="middle" font-size="16" fill="#333" font-weight="bold">用户</text>
+  
+  <!-- 主DID -->
+  <rect x="350" y="250" width="100" height="60" rx="10" fill="#5A9" stroke="#2C3E50" stroke-width="2"/>
+  <text x="400" y="280" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">主DID</text>
+  <text x="400" y="300" text-anchor="middle" font-size="12" fill="#fff">社交关系</text>
+  
+  <!-- 连接线 - 用户到主DID -->
+  <line x1="400" y1="190" x2="400" y2="250" stroke="#333" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- 子DID区域 -->
+  <ellipse cx="400" cy="430" rx="300" ry="120" fill="rgba(100,149,237,0.1)" stroke="#6495ED" stroke-width="2" stroke-dasharray="10,5"/>
+  <text x="400" y="350" text-anchor="middle" font-size="16" fill="#333" font-weight="bold">子DID (场景隔离)</text>
+  
+  <!-- 子DID 1 - 购物 -->
+  <rect x="200" y="400" width="100" height="60" rx="10" fill="#FF6B6B" stroke="#2C3E50" stroke-width="2"/>
+  <text x="250" y="425" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">子DID 1</text>
+  <text x="250" y="445" text-anchor="middle" font-size="12" fill="#fff">购物场景</text>
+  
+  <!-- 子DID 2 - 外卖 -->
+  <rect x="350" y="400" width="100" height="60" rx="10" fill="#FDCB6E" stroke="#2C3E50" stroke-width="2"/>
+  <text x="400" y="425" text-anchor="middle" font-size="16" fill="#333" font-weight="bold">子DID 2</text>
+  <text x="400" y="445" text-anchor="middle" font-size="12" fill="#333">外卖场景</text>
+  
+  <!-- 子DID 3 - 门票 -->
+  <rect x="500" y="400" width="100" height="60" rx="10" fill="#6C5CE7" stroke="#2C3E50" stroke-width="2"/>
+  <text x="550" y="425" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">子DID 3</text>
+  <text x="550" y="445" text-anchor="middle" font-size="12" fill="#fff">门票场景</text>
+  
+  <!-- 连接线 - 主DID到子DIDs -->
+  <line x1="400" y1="310" x2="250" y2="400" stroke="#333" stroke-width="2"/>
+  <line x1="400" y1="310" x2="400" y2="400" stroke="#333" stroke-width="2"/>
+  <line x1="400" y1="310" x2="550" y2="400" stroke="#333" stroke-width="2"/>
+  
+  <!-- 周期性更新图示 -->
+  <g transform="translate(650, 430)">
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#4ECDC4" stroke-width="3"/>
+    <path d="M0,-30 A30,30 0 0,1 26,15 L0,0 Z" fill="#4ECDC4" opacity="0.7"/>
+    <text x="0" y="50" text-anchor="middle" font-size="14" fill="#333">周期性更新</text>
+  </g>
+  
+  <!-- 隐私保护图示 -->
+  <g transform="translate(150, 430)">
+    <rect x="-25" y="-25" width="50" height="50" fill="none" stroke="#333" stroke-width="2"/>
+    <text x="0" y="-5" text-anchor="middle" font-size="24" fill="#333">🔒</text>
+    <text x="0" y="35" text-anchor="middle" font-size="14" fill="#333">隐私保护</text>
+  </g>
+  
+  <!-- 说明文本 -->
+  <text x="400" y="520" text-anchor="middle" font-size="14" fill="#333">
+    <tspan x="400" dy="0">通过多DID策略实现隐私保护与权限隔离</tspan>
+    <tspan x="400" dy="20">子DID可周期性更新，提高安全性</tspan>
+  </text>
+  
+  <!-- 非法追踪警告 -->
+  <g transform="translate(700, 150)">
+    <circle cx="0" cy="0" r="40" fill="rgba(255,0,0,0.1)" stroke="red" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="0" y="0" text-anchor="middle" font-size="24" fill="red">⚠️</text>
+    <text x="0" y="50" text-anchor="middle" font-size="12" fill="red">防止非法追踪</text>
+  </g>
+  <line x1="660" y1="150" x2="450" y2="150" stroke="red" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="660" y1="150" x2="550" y2="400" stroke="red" stroke-width="1" stroke-dasharray="5,5" opacity="0.3"/>
+</svg> 
